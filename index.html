@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ES Empreendimentos</title>
+    <title>ES Tecnologia</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <nav>
         <ul>
+            <li class="logo"><a id="logo" href="#home">ES Tecnologia</a></li>
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Serviços</a></li>
             <li><a href="#features">Funcionalidades</a></li>
@@ -20,7 +23,8 @@
     <section class="hero">
         <div class="hero-content">
             <h2>Desbloqueie o Futuro</h2>
-            <p>Transforme suas ideias em realidade com tecnologia e inovação de ponta.</p>
+            <p>Obtenha mais de 90% de economia de custos com os modelos menores e abertos dos nossos produtos,
+                projetados para a eficiência do desenvolvedor</p>
             <a href="#" class="cta-button" onclick="openModal()">Comece Agora</a>
         </div>
     </section>
@@ -42,6 +46,7 @@
     </section>
 
     <section class="features" id="features">
+        <h2>Nossas Funcionalidades</h2>
         <div class="feature-card">
             <h3>Técnicas Inovadoras</h3>
             <p>Experimente os mais recentes avanços em tecnologia projetados para capacitar seu negócio.</p>
@@ -72,8 +77,11 @@
     </div>
     <section class="about" id="about">
         <h2>Sobre Nós</h2>
-        <p>Na ES Empreendimentos, estamos comprometidos em impulsionar a inovação e transformar ideias em realidade. Nossa equipe de especialistas trabalha incansavelmente para fornecer soluções tecnológicas que atendam às necessidades dinâmicas do mercado moderno.</p>
-        <p>Com anos de experiência e uma paixão por excelência, estamos prontos para ajudar você a alcançar novos patamares de sucesso.</p>
+        <p>Na ES Empreendimentos, estamos comprometidos em impulsionar a inovação e transformar ideias em realidade.
+            Nossa equipe de especialistas trabalha incansavelmente para fornecer soluções tecnológicas que atendam às
+            necessidades dinâmicas do mercado moderno.</p>
+        <p>Com anos de experiência e uma paixão por excelência, estamos prontos para ajudar você a alcançar novos
+            patamares de sucesso.</p>
     </section>
     <section class="contato" id="contato">
         <h2>Contato</h2>
@@ -90,7 +98,7 @@
         function closeModal() {
             document.getElementById('contactModal').style.display = 'none';
         }
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             const modal = document.getElementById('contactModal');
             if (event.target === modal) {
                 closeModal();
@@ -98,4 +106,5 @@
         }
     </script>
 </body>
+
 </html>

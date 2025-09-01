@@ -15,16 +15,36 @@ body {
 }
 
 nav {
-    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 1rem;
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav ul .logo {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 2.5rem;
+}
+
+nav .logo {
+    font-weight: bold;
+}
+
+nav .logo::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background: #15ff00;
+    margin-top: 5px;
 }
 
 nav a {
@@ -33,7 +53,7 @@ nav a {
     font-weight: 600;
     font-size: 1.1rem;
     position: relative;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 nav a::after {
@@ -44,7 +64,7 @@ nav a::after {
     background: #ff00d4;
     bottom: -5px;
     left: 0;
-    transition: width 0.3s ease;
+    transition: width 0.5s ease;
 }
 
 nav a:hover::after {
@@ -61,7 +81,6 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('https://source.unsplash.com/random/1600x900?tech') no-repeat center center/cover;
     position: relative;
     overflow: hidden;
 }
@@ -119,6 +138,7 @@ nav a:hover {
 }
 
 .services {
+    background-image: url('../img/inovadora.jpg');
     padding: 5rem 2rem;
     margin: 0 auto;
     display: grid;
@@ -132,6 +152,7 @@ nav a:hover {
     margin-bottom: 1.5rem;
     text-align: center;
     color: #ffffff;
+    align-content: center;
 }
 
 .service-card {
@@ -169,12 +190,21 @@ nav a:hover {
 }
 
 .features {
+    background-image: url('../img/costura.jpg');
     padding: 5rem 2rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     line-height: 1.6;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    align-content: center;
 }
 
 .feature-card {
@@ -196,6 +226,7 @@ nav a:hover {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #ffffff;
+    align-content: center;
 }
 
 .feature-card p {
@@ -290,6 +321,7 @@ nav a:hover {
 .about {
     padding: 5rem 2rem;
     margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .about h2 {
@@ -335,8 +367,8 @@ nav a:hover {
 }
 
 footer {
-    background: linear-gradient(135deg, #6e00ff, #ff00d4);
-    padding: 1px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
     text-align: center;
     font-size: 0.9rem;
 }
